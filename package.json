@@ -1,0 +1,23 @@
+{
+  "name": "examples",
+  "version": "0.0.1",
+  "description": "Some examples for writing code for the fantasy internet",
+  "main": "index.js",
+  "scripts": {
+    "wast": "node ./compile-wast.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FantasyInternet/examples.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FantasyInternet/examples/issues"
+  },
+  "homepage": "https://github.com/FantasyInternet/examples#readme",
+  "devDependencies": {
+    "wabt": "^1.0.0",
+    "waquire": "^0.3.1"
+  }
+}
