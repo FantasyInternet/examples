@@ -22,7 +22,7 @@
     "assemblyscript": "github:AssemblyScript/assemblyscript",
     "glob": "^7.1.2",
     "wabt": "^1.0.0",
-    "walt-compiler": "^0.8.0",
+    "walt-compiler": "^0.8.1",
     "waquire": "^0.3.1"
   },
   "dependencies": {}
