@@ -4,6 +4,7 @@
   "description": "Some examples for writing code for the fantasy internet in various programming languages.",
   "main": "index.js",
   "scripts": {
+    "assemblyscript": "asc assemblyscript/boot.ts -b build/boot.wasm --validate --sourceMap --measure --optimize",
     "walt": "node ./compile-walt.js",
     "wast": "node ./compile-wast.js"
   },
@@ -18,6 +19,8 @@
   },
   "homepage": "https://github.com/FantasyInternet/examples#readme",
   "devDependencies": {
+    "assemblyscript": "github:AssemblyScript/assemblyscript",
+    "glob": "^7.1.2",
     "wabt": "^1.0.0",
     "walt-compiler": "^0.8.0",
     "waquire": "^0.3.1"
