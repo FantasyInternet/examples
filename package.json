@@ -1,7 +1,7 @@
 {
   "name": "examples",
   "version": "0.0.1",
-  "description": "Some examples for writing code for the fantasy internet",
+  "description": "Some examples for writing code for the fantasy internet in various programming languages.",
   "main": "index.js",
   "scripts": {
     "walt": "node ./compile-walt.js",
