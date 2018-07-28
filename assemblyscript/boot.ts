@@ -9,12 +9,12 @@ declare namespace env {
 }
 
 // strings will be stored as utf-16
-let myStr: string = "Hello world!";
+let myStr: string = "Hello AssemblyScript!";
 
 // This function will be exported and called at startup
 export function init(): void {
-  // Set the display to text mode. 13 columns, 1 line.
-  env.setDisplayMode(0, 13, 1);
+  // Set the display to text mode. 22 columns, 1 line.
+  env.setDisplayMode(0, 22, 1);
   // Convert utf-16 string to ascii
   let str8 = utf16toAscii(myStr);
   // Push the new string from memory to the buffer stack.

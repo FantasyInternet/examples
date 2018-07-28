@@ -6,15 +6,15 @@
 
   ;; Setup memory.
   (memory $memory 1) ;; 1 page = 64KiB. 
-    (data (i32.const 0) "Hello world!") ;; Put "Hello world!" at the beginning of memory.
+    (data (i32.const 0) "Hello wa(s)t!") ;; Put "Hello world!" at the beginning of memory.
     (export "memory" (memory $memory)) ;; Export memory so that the terminal can access it when we push stuff.
 
   ;; This function will be called at startup
   (func $init
     ;; Set the display to text mode. 13 columns, 1 line.
-    (call $setDisplayMode (i32.const 0) (i32.const 13) (i32.const 1))
+    (call $setDisplayMode (i32.const 0) (i32.const 14) (i32.const 1))
     ;; Push the first 12 bytes (the length of "Hello world!") from memory to the buffer stack.
-    (call $pushFromMemory (i32.const 0) (i32.const 12))
+    (call $pushFromMemory (i32.const 0) (i32.const 13))
     ;; Pop the string off the buffer stack and print it.
     (call $print)
   )

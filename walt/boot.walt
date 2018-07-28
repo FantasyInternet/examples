@@ -13,10 +13,10 @@ export const memory: Memory = { initial: 1 };
 
 // This function will be exported and called at startup
 export function init(): void {
-  // Set the display to text mode. 13 columns, 1 line.
-  setDisplayMode(0, 13, 1);
+  // Set the display to text mode. 12 columns, 1 line.
+  setDisplayMode(0, 12, 1);
   // Push "Hello world!" from memory to the buffer stack.
-  let hello: i32 = "Hello world!";
+  let hello: i32 = "Hello Walt!";
   pushFromMemory(hello + 1, i32.load8_u(hello));
   // Pop the string off the buffer stack and print it.
   print();

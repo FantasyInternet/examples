@@ -4,10 +4,10 @@ Some examples for writing code for the fantasy internet in various programming l
 
 Status
 ------
- - AssemblyScript
-   ✔ seems to be working with some workarounds.
- - Walt  
+ - [AssemblyScript](http://assemblyscript.org/)  
+   ✔ works!
+ - [Walt](https://github.com/ballercat/walt)  
    ❌ exporting memory doesn't seem to work yet.. ([See issue](https://github.com/ballercat/walt/issues/130))
- - Wast  
-   ✔ works perfectly!
+ - [Wa(s)t](https://webassembly.org/docs/semantics/)+[Waquire](https://github.com/FantasyInternet/waquire)  
+   ✔ works!
 
