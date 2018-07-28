@@ -1,17 +1,16 @@
 const
-  wabt = require("wabt"),
-  waquire = require("waquire"),
+  walt = require("walt-compiler").default,
   fs = require("fs")
 
 let
-  srcDir = "./wast/",
+  srcDir = "./walt/",
   buildDir = "./build/"
 
 function init() {
   let files = fs.readdirSync(srcDir)
   mkDirP(buildDir)
   files.forEach((filename) => {
-    if (filename.substr(-5) === ".wast")
+    if (filename.substr(-5) === ".walt")
       compile(filename)
   })
 }
@@ -33,9 +32,9 @@ function mkDirP(path) {
 function compile(filename) {
   console.log("Compiling ", filename, "...")
 
-  let bundle = waquire(srcDir + filename)
-  let binary = wabt.parseWat(filename, bundle).toBinary({ write_debug_names: true }).buffer
-  fs.writeFileSync(buildDir + filename.replace(".wast", ".wasm"), new Uint8Array(binary))
+  let srcCode = "" + fs.readFileSync(srcDir + filename)
+  let binary = walt(srcCode)
+  fs.writeFileSync(buildDir + filename.replace(".walt", ".wasm"), new Uint8Array(binary))
 
   console.log("oK")
 }
