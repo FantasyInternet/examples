@@ -4,9 +4,9 @@ Some examples for writing code for the fantasy internet in various programming l
 
 Languages
 ---------
- - [AssemblyScript](http://assemblyscript.org/) ✔
- - [Walt](https://github.com/ballercat/walt) ✔
- - [Wa(s)t](https://webassembly.org/docs/semantics/)+[Waquire](https://github.com/FantasyInternet/waquire) ✔
+ - [AssemblyScript](assemblyscript/)
+ - [Walt](walt/)
+ - [Wa(s)t+Waquire](wast/)
 
 Compile
 -------
