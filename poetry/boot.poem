@@ -1,0 +1,20 @@
+~ import functions from the fantasy internet API, documented at https://fantasyinternet.github.io/api
+import "env" "setDisplayMode" setDisplayMode 3 0
+import "env" "pushFromMemory" pushFromMemory 2 0
+import "env" "print" _print 0 0
+
+~ Setup memory.
+export_memory "memory"
+
+~ Wrapper function that does the buffer stack pushing for us.
+func print string
+  pushFromMemory (address_of string) (size_of string)
+  _print
+
+~ This function will be called at startup
+export "init" init
+  ~ Set the display to text mode. 13 columns, 1 line.
+  setDisplayMode 0 14 1
+  ~ Print out greeting!
+  print "Hello Poetry!"
+

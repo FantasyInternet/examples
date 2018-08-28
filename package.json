@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "assemblyscript": "asc assemblyscript/boot.ts -b build/boot.wasm --validate --sourceMap --measure --optimize",
+    "poetry": "poetry ./poetry/boot.poem -b ./build/boot.wasm",
     "walt": "node ./compile-walt.js",
     "wast": "node ./compile-wast.js",
     "start": "statify -d ./build/"
@@ -22,6 +23,7 @@
   "devDependencies": {
     "assemblyscript": "github:AssemblyScript/assemblyscript",
     "glob": "^7.1.2",
+    "poetry-compiler": "^0.6.1",
     "wabt": "^1.0.0",
     "walt-compiler": "^0.8.2",
     "waquire": "^0.3.1"

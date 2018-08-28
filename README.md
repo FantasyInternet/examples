@@ -5,6 +5,7 @@ Some examples for writing code for the fantasy internet in various programming l
 Languages
 ---------
  - [AssemblyScript](assemblyscript/)
+ - [Poetry](poetry/)
  - [Walt](walt/)
  - [Wa(s)t+Waquire](wast/)
 
@@ -14,7 +15,7 @@ To compile a specific language, simply run:
 
     $ npm run [language]
 
-where [language] is one of the programming languages listed above.
+where [language] is one of the programming languages listed above (in lower case).
 
 To see the result, open the `build` folder in [CyberTerminal](https://github.com/FantasyInternet/cyberterminal) or run the following command and open <http://localhost:8000>
 
